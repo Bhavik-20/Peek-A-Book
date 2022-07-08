@@ -244,7 +244,9 @@ session_start();
         	$new=0;
            if(isset($_SESSION['user_id']))
            { 
-              $con= mysqli_connect("localhost","root","","BookStore");
+              // $con= mysqli_connect("localhost","root","","BookStore");
+              include "conn.php";
+	            $con= mysqli_connect($HOST,$USERNAME,$PASSWORD,$DATABASE);
               if ($con->connect_error) 
               {
                 die("<br>Connection failed: " . $con->connect_error);
@@ -310,7 +312,9 @@ session_start();
             }
             else
             { 
-              $con= mysqli_connect("localhost","root","","BookStore");
+              include "conn.php";
+              $con= mysqli_connect($HOST,$USERNAME,$PASSWORD,$DATABASE);
+              // $con= mysqli_connect("localhost","root","","BookStore");
               if ($con->connect_error) 
               {
                 die("<br>Connection failed: " . $con->connect_error);
@@ -342,7 +346,9 @@ session_start();
           }
           if(isset($_POST['Delete']))
           {
-            $con= mysqli_connect("localhost","root","","BookStore");
+            // $con= mysqli_connect("localhost","root","","BookStore");
+            include "conn.php";
+	          $con= mysqli_connect($HOST,$USERNAME,$PASSWORD,$DATABASE);
             if ($con->connect_error) 
             {
               die("<br>Connection failed: " . $con->connect_error);
@@ -376,7 +382,9 @@ session_start();
         <div class="profilea"> 
         <!-- ------------------------ PHP code Retrieving User name from db ------------------ -->
         <?php 
-			$con= mysqli_connect("localhost","root","","BookStore");
+			// $con= mysqli_connect("localhost","root","","BookStore");
+      include "conn.php";
+      $con= mysqli_connect($HOST,$USERNAME,$PASSWORD,$DATABASE);
 			if ($con->connect_error) 
 			{
 				die("<br>Connection failed: " . $con->connect_error);

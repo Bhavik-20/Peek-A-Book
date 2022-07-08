@@ -61,7 +61,9 @@
         <?php
           if(isset($_SESSION['user_id']))
           {
-            $con= mysqli_connect("localhost","root","","BookStore");
+            // $con= mysqli_connect("localhost","root","","BookStore");
+            include "conn.php";
+	          $con= mysqli_connect($HOST,$USERNAME,$PASSWORD,$DATABASE);
             // Check connection
             if ($con->connect_error) 
             {

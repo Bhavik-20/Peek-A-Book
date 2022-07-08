@@ -1,0 +1,110 @@
+body{
+    background-color:#E3F2FD;
+    };
+    
+    .profile_top p      {
+    color: darkslateblue;
+    }
+    
+    .profilea{
+    height: fit-content;
+    width: fit-content;
+    background-color: white;
+    box-shadow: 1px 1px 15px 6px #BBDEFB;
+    padding: 50px;
+    border-radius: 15px;
+    display: flex;
+    flex-wrap: nowrap;
+    }
+    .profilea .inputb {
+        margin: 10px;
+      }
+
+        .profileb{
+            height: fit-content;
+            width: fit-content;
+            background-color: white;
+            box-shadow: 1px 1px 15px 6px #BBDEFB;
+            padding: 50px;
+            border-radius: 15px;
+            text-justify: auto;
+        }
+
+    .profilec{
+        height: fit-content;
+        width: fit-content;
+        display: flex;
+        flex-wrap: nowrap;
+        }
+
+        .profileb .inputb {
+            margin: 10px;
+          }
+
+        .profilec .profile{
+            background-color: white;
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+            border: 5px solid #ddd; 
+            
+        }
+
+        .profilec .profile p{
+            padding: 50px 30px;
+            color:darkgrey;
+        }
+  
+    
+    .inputb {
+        background-color: white;
+        border-radius: 10px;
+        outline-color: lightsteelblue;
+        box-shadow: none;
+        display:inline-block;;
+        height: 30px;
+        line-height: 30px;
+        padding: 8px 15px;
+        border: 1px solid lightsteelblue;
+        width: 250px;
+        font-size: 12px;
+    }
+    
+    .inputb:focus{
+        outline: none;
+        box-shadow: 0px 0px 5px #58D68D;
+        border-color: #5AB0DB;
+    }
+    
+    .inputb:hover {
+        border: 1px solid #5AB0DB;
+        border-radius: 5px;
+    }
+    .confirm-btn {
+        background-color:#58D68D;
+        color: white;
+        border:1px solid #5AB0DB;
+        border-radius: 15px;
+        display: block;
+        margin: 15px auto; 
+        padding: 10px;
+        width: 250px;
+        height:40px;
+        font-size: 13px;
+        font-weight: bold;
+        cursor: pointer; 
+        outline-color: invert; 
+    }
+
+    .profileimage{
+        height: fit-content;
+        width: fit-content;
+        display: flex;
+        flex-wrap: nowrap;
+        }
+
+ 
+
+   
+      
+      

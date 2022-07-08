@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@500&display=swap');
+
+	
+body {
+    font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+    height: 100%;
+    background-color:#E3F2FD;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 10px;}
+   
+}
+
+@media screen and (max-width: 450px) {
+    .login-form{
+        margin-top: 10%;
+    }
+
+    .register-form{
+        margin-top: 10%;
+        margin-left: 10%;
+        margin-right:25%;
+        margin-bottom:15%;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .main{
+        margin-left: 40%; 
+        margin-top: 10px;
+    }
+
+    .sidenav{
+        width: 40%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+    }
+
+    .login-form{
+        margin-top: 25%;
+        margin-left: 20%;
+        margin-right:35%;
+        margin-bottom:30%;
+    }
+
+    .register-form{
+        margin-top: 20%;
+    }
+}
+
+.login-main{
+	margin-top: 20%;
+	padding: 60px;
+    }
+    
+.login-main h1{
+    font-size: 40pt;
+    color:#283593;
+    font-family: 'Lobster', cursive;
+    }
+
+.login-main h2{
+    font-size: medium;
+    color: dimgray;
+    padding-left: 20px;
+    font-family: 'Sansita Swashed', cursive;
+}
+
+.form-control {
+    border: 0;
+    border-radius: 10px;
+    outline: none;
+    display: inline-block;
+    box-shadow: none;
+    line-height: 30px;
+    padding: 8px 15px;
+    border: 1px solid #eee;
+    font-size: 12px;
+    width: 350px;
+}
+
+.form-control :focus{
+    outline: none;
+    box-shadow: 0px 0px 5px #58D68D;
+    border-color: #5AB0DB;
+}
+
+.form-control:hover {
+    border: 1px solid #5AB0DB;
+    border-radius: 5px;
+}
+
+.submit-btn {
+    background-color:#58D68D;
+    color: white;
+    border:1px solid #5AB0DB;
+    border-radius: 15px;
+    display: block;
+    padding: 10px;
+    margin: 0px 10px 0px 40px;
+    width: 150px;
+    height:40px;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer; 
+    outline-color: invert; 
+}
+
+.submit-btn:hover {
+    outline: none;
+    box-shadow: 0px 0px 5px grey;
+}
+
+
+.register-btn {
+    background-color:#6c757d;
+    color: white;
+    border:1px solid #6c757d;
+    border-radius: 15px;
+    display: block;
+    padding: 10px;
+    margin: 0px 10px 0px 10px;
+    width: 150px;
+    height:40px;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer; 
+    outline-color: invert; 
+}

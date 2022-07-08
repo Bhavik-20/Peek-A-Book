@@ -44,7 +44,9 @@
 	//include "Header_file.php";
 
 	function getOrderId($conn, $customerid){
-		$conn = mysqli_connect("localhost", "root", "", "bookstore");
+		// $conn = mysqli_connect("localhost", "root", "", "bookstore");
+		include "conn.php";
+		$conn= mysqli_connect($HOST,$USERNAME,$PASSWORD,$DATABASE);
 		$query = "SELECT orderid FROM orders WHERE userid = '$customerid' and date = date('Y-m-d H:i'); ";
 		$result = mysqli_query($conn, $query);
 		if(!$result){
@@ -55,7 +57,9 @@
 		return $row['orderid'];
 	}
 	function getbookprice($isbn){
-		$conn = mysqli_connect("localhost", "root", "", "bookstore");
+		include "conn.php";
+		$conn= mysqli_connect($HOST,$USERNAME,$PASSWORD,$DATABASE);
+		// $conn = mysqli_connect("localhost", "root", "", "bookstore");
 		$query = "SELECT book_price FROM books WHERE book_isbn = '$isbn'";
 		$result = mysqli_query($conn, $query);
 		if(!$result){
@@ -79,7 +83,9 @@
 	//update items left
 	foreach($_SESSION['cart'] as $isbn => $qty)
 	   {
-	   	$conn = mysqli_connect("localhost", "root", "", "bookstore");
+		include "conn.php";
+		$conn= mysqli_connect($HOST,$USERNAME,$PASSWORD,$DATABASE);
+	   	// $conn = mysqli_connect("localhost", "root", "", "bookstore");
 		if (!$conn) 
 		{
 		die("Connection failed: " . mysqli_connect_error());
@@ -98,7 +104,9 @@
 	if(isset($_SESSION['empty_cart']))
 	{
 
-		$conn = mysqli_connect("localhost", "root", "", "bookstore");
+		// $conn = mysqli_connect("localhost", "root", "", "bookstore");
+		include "conn.php";
+		$conn= mysqli_connect($HOST,$USERNAME,$PASSWORD,$DATABASE);
 		if (!$conn) 
 		{
 		die("Connection failed: " . mysqli_connect_error());

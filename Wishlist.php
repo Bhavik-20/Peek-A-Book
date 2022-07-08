@@ -57,7 +57,9 @@ if(isset($_GET['bookisbn'])){
 		$book_isbn = $_GET['bookisbn'];
 	}
 
-	$conn = mysqli_connect("localhost", "root", "", "bookstore");
+	// $conn = mysqli_connect("localhost", "root", "", "bookstore");
+	include "conn.php";
+	$conn= mysqli_connect($HOST,$USERNAME,$PASSWORD,$DATABASE);
 	  if (!$conn) 
 	  {
 	    die("Connection failed: " . mysqli_connect_error());
@@ -98,7 +100,9 @@ if(isset($_GET['bookisbn'])){
 		//$_SESSION['cart']["$del_isbn"] = 0; // $_POST["$isbn"] this is the qty entered in the form below
 		unset($_SESSION['wishlist']["$del_isbn"]);
 
-		    $conn = mysqli_connect("localhost", "root", "", "bookstore");
+		    // $conn = mysqli_connect("localhost", "root", "", "bookstore");
+			include "conn.php";
+			$conn= mysqli_connect($HOST,$USERNAME,$PASSWORD,$DATABASE);
 	          if (!$conn) 
 	          {
 	            die("Connection failed: " . mysqli_connect_error());
@@ -116,7 +120,9 @@ if(isset($_GET['bookisbn'])){
 
 	if(isset($_SESSION['wishlist']) && (array_count_values($_SESSION['wishlist'])))
 	{
-		 $conn = mysqli_connect("localhost", "root", "", "bookstore");
+		//  $conn = mysqli_connect("localhost", "root", "", "bookstore");
+		include "conn.php";
+		$conn= mysqli_connect($HOST,$USERNAME,$PASSWORD,$DATABASE);
 	          if (!$conn) 
 	          {
 	            die("Connection failed: " . mysqli_connect_error());
@@ -142,7 +148,9 @@ if(isset($_GET['bookisbn'])){
 	   		</tr>
 	   		<?php
 		    	foreach($_SESSION['wishlist'] as $isbn => $qty){
-					$conn = mysqli_connect("localhost", "root", "", "bookstore");
+					// $conn = mysqli_connect("localhost", "root", "", "bookstore");
+					include "conn.php";
+					$conn= mysqli_connect($HOST,$USERNAME,$PASSWORD,$DATABASE);
 				    if(!$conn){
 				      echo "Can't connect database " . mysqli_connect_error($conn);
 				      exit;

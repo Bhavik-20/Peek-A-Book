@@ -53,6 +53,7 @@
 	session_start();
 	require_once "Cart_functions.php";
 	include "Header_file.php";
+	include "conn.php";
 
 	// book_isbn got from form post method, change this place later.
 	if(isset($_POST['bookisbn'])){
@@ -66,7 +67,9 @@
 
 		unset($_SESSION['wishlist']["$del_isbn"]);
 
-		    $conn = mysqli_connect("localhost", "root", "", "bookstore");
+		    // $conn = mysqli_connect("localhost", "root", "", "bookstore");
+			$conn= mysqli_connect($HOST,$USERNAME,$PASSWORD,$DATABASE);
+
 	          if (!$conn) 
 	          {
 	            die("Connection failed: " . mysqli_connect_error());
@@ -80,7 +83,9 @@
 		     mysqli_stmt_close($pst);
 	}
 
-	$conn = mysqli_connect("localhost", "root", "", "bookstore");
+	// $conn = mysqli_connect("localhost", "root", "", "bookstore");
+	$conn= mysqli_connect($HOST,$USERNAME,$PASSWORD,$DATABASE);
+
 	  if (!$conn) 
 	  {
 	    die("Connection failed: " . mysqli_connect_error());
@@ -125,7 +130,9 @@
 				$_SESSION['cart']["$isbn"] = $_POST["$isbn"]; // $_POST["$isbn"] this is the qty entered in the form below
 			}
 		}
-		    $conn = mysqli_connect("localhost", "root", "", "bookstore");
+		    // $conn = mysqli_connect("localhost", "root", "", "bookstore");
+			$conn= mysqli_connect($HOST,$USERNAME,$PASSWORD,$DATABASE);
+
 	          if (!$conn) 
 	          {
 	            die("Connection failed: " . mysqli_connect_error());
@@ -147,7 +154,9 @@
 		//$_SESSION['cart']["$del_isbn"] = 0; // $_POST["$isbn"] this is the qty entered in the form below
 		unset($_SESSION['cart']["$del_isbn"]);
 
-		    $conn = mysqli_connect("localhost", "root", "", "bookstore");
+		    // $conn = mysqli_connect("localhost", "root", "", "bookstore");
+			$conn= mysqli_connect($HOST,$USERNAME,$PASSWORD,$DATABASE);
+
 	          if (!$conn) 
 	          {
 	            die("Connection failed: " . mysqli_connect_error());
@@ -166,7 +175,9 @@
 	{
 		$_SESSION['total_price'] = total_price($_SESSION['cart']);
 		$_SESSION['total_items'] = total_items($_SESSION['cart']);
-		 $conn = mysqli_connect("localhost", "root", "", "bookstore");
+		//  $conn = mysqli_connect("localhost", "root", "", "bookstore");
+		$conn= mysqli_connect($HOST,$USERNAME,$PASSWORD,$DATABASE);
+
 	          if (!$conn) 
 	          {
 	            die("Connection failed: " . mysqli_connect_error());
@@ -194,7 +205,9 @@
 	   		</tr>
 	   		<?php
 		    	foreach($_SESSION['cart'] as $isbn => $qty){
-					$conn = mysqli_connect("localhost", "root", "", "bookstore");
+					// $conn = mysqli_connect("localhost", "root", "", "bookstore");
+					$conn= mysqli_connect($HOST,$USERNAME,$PASSWORD,$DATABASE);
+
 				    if(!$conn){
 				      echo "Can't connect database " . mysqli_connect_error($conn);
 				      exit;

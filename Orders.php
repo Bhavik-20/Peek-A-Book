@@ -48,7 +48,9 @@
    		<div style="margin: 30px; padding:20px; border: 2px solid lightgrey; border-radius: 10px;">
    			<?php $type= array();
 	$items = array();
-	$conn = mysqli_connect("localhost", "root", "", "bookstore");
+	// $conn = mysqli_connect("localhost", "root", "", "bookstore");
+	include "conn.php";
+	$conn= mysqli_connect($HOST,$USERNAME,$PASSWORD,$DATABASE);
 	  if (!$conn) 
 	  {
 	    die("Connection failed: " . mysqli_connect_error());

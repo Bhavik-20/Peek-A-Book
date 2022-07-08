@@ -7,7 +7,9 @@
       // setcookie($cookie_name, $cookie_value, time()+60,"/");
       // setcookie("visiting_user","",time()-3600,"/"); 
     }
-    $conn = mysqli_connect("localhost", "root", "", "bookstore");
+    include "conn.php";
+	  $conn= mysqli_connect($HOST,$USERNAME,$PASSWORD,$DATABASE);
+    // $conn = mysqli_connect("localhost", "root", "", "bookstore");
     if(!$conn)
     {
         echo "Can't connect database " . mysqli_connect_error($conn);
@@ -17,7 +19,9 @@
     include "Admin_header.php";
 
     function getUserInfo($id){
-        $conn = mysqli_connect("localhost", "root", "", "bookstore");
+        // $conn = mysqli_connect("localhost", "root", "", "bookstore");
+        include "conn.php";
+	      $conn= mysqli_connect($HOST,$USERNAME,$PASSWORD,$DATABASE);
           if (!$conn) 
           {
             die("Connection failed: " . mysqli_connect_error());
@@ -52,7 +56,9 @@
     <div style="margin: 30px; padding:20px; border: 2px solid lightgrey; border-radius: 10px;">
     <?php $type= array();
     $items = array();
-    $conn = mysqli_connect("localhost", "root", "", "bookstore");
+    // $conn = mysqli_connect("localhost", "root", "", "bookstore");
+    include "conn.php";
+	  $conn= mysqli_connect($HOST,$USERNAME,$PASSWORD,$DATABASE);
       if (!$conn) 
       {
         die("Connection failed: " . mysqli_connect_error());

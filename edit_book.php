@@ -21,7 +21,10 @@
 		move_uploaded_file($_FILES['image']['tmp_name'], $uploadDirectory);
 	}
 
-	$conn = mysqli_connect("localhost", "root", "", "bookstore");
+	// $conn = mysqli_connect("localhost", "root", "", "bookstore");
+	include "conn.php";
+	$conn= mysqli_connect($HOST,$USERNAME,$PASSWORD,$DATABASE);
+
 		if(!$conn){
 			echo "Can't connect database " . mysqli_connect_error($conn);
 			exit;

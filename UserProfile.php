@@ -194,7 +194,9 @@ session_start();
 	          $username = "root";
 	          $password = "";
 	          $dbname = "BookStore";
-	          $conn = mysqli_connect($servername, $username, $password, $dbname);
+	          // $conn = mysqli_connect($servername, $username, $password, $dbname);
+            include "conn.php";
+	          $conn= mysqli_connect($HOST,$USERNAME,$PASSWORD,$DATABASE);
 
 	          if (!$conn) 
 	          {

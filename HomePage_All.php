@@ -237,7 +237,9 @@ $cookie_name="auto_login";
   }
       
       $type=['null'];
-      $conn = mysqli_connect("localhost", "root", "", "bookstore");
+      // $conn = mysqli_connect("localhost", "root", "", "bookstore");
+      include "conn.php";
+	    $conn= mysqli_connect($HOST,$USERNAME,$PASSWORD,$DATABASE);
       if(!$conn)
       {
         echo "Can't connect database " . mysqli_connect_error($conn);

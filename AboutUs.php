@@ -90,8 +90,8 @@ session_start();
             color: white;
         }
         .fa-linkedin {
-            background: #007bb5;
-            color: white;
+            color: #007bb5;
+            background: white;
         }
         
         .link-text{

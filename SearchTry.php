@@ -28,7 +28,7 @@ echo "<select id='searchddl' class='form-control' style='width:230px;' onchange=
 echo "<option>Search For Book Name</option>";
 $i=0;
 while ($row=mysqli_fetch_assoc($result))
-{	$i=$row['book_isbn'];
+{	$i=$row[book_isbn];
 echo "<option value='$i'>$row[book_title]</option>";
 }
 echo "</select>";	     

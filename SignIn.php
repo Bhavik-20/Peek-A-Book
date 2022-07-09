@@ -121,6 +121,7 @@
 
 	<!--------- PHP VALIDATION OF FORM + DATABASE -------------->
 	<?php 
+	require 'conn.php';
 	$emailErr=$email=$pass="";
     $e=0;
     $p=0;
@@ -171,9 +172,8 @@
 		// $USERNAME="7ky85vsj9r7e";
 		// $PASSWORD="pscale_pw_MjVZvRR2vGs9XwZNXzvhwoUOgvKEJpB-4hDrwxcauW8";
 		// $DATABASE="peek-a-book";
-		// $conn= mysqli_connect($HOST,$USERNAME,$PASSWORD,$DATABASE);
-		include "conn.php";
 		$conn= mysqli_connect($HOST,$USERNAME,$PASSWORD,$DATABASE);
+
 
 		if ($conn->connect_error) 
 		{
@@ -221,7 +221,7 @@
 	<div class="sidenav">
 		<div class="login-main">
 		  	<div class="row" style="margin-left:0px;">
-			<img src="Images/book1.jpg" alt="BooksImage" style="width:70px;height:110px; padding-top:20px; margin-right:20px;">
+			<img src="images/book1.jpg" alt="BooksImage" style="width:70px;height:110px; padding-top:20px; margin-right:20px;">
 			<h1>Welcome<br>To Book Store</h1>
 			<h2>Sign In to buy your favourite books !</h2>
 		</div>

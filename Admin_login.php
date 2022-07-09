@@ -46,6 +46,7 @@
 <!-- -------------------------Php validation of form------------------------------- 
 password hashing in phpmyadmin: UPDATE `admins` SET `password`=sha1(password) WHERE id=4  -->    
    <?php
+    require "conn.php";
     $nameErr=$name=$pass="";
     $e=0;
     $p=0;
@@ -88,9 +89,7 @@ password hashing in phpmyadmin: UPDATE `admins` SET `password`=sha1(password) WH
           // $USERNAME="7ky85vsj9r7e";
           // $PASSWORD="pscale_pw_MjVZvRR2vGs9XwZNXzvhwoUOgvKEJpB-4hDrwxcauW8";
           // $DATABASE="peek-a-book";
-          // $conn= mysqli_connect($HOST,$USERNAME,$PASSWORD,$DATABASE);
-          include "conn.php";
-	        $conn= mysqli_connect($HOST,$USERNAME,$PASSWORD,$DATABASE);
+          $conn= mysqli_connect($HOST,$USERNAME,$PASSWORD,$DATABASE);
           // Check connection
           if ($conn->connect_error) 
           {

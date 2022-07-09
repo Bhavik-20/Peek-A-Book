@@ -41,6 +41,7 @@ else
 <body style="background-color:#E3F2FD;">
 <?php
 include "Admin_header.php";
+require "conn.php";
 
 function getGenre($conn, $gid){
     $query = "SELECT genre FROM genre WHERE genre_id = '$gid'";
@@ -59,8 +60,7 @@ function getGenre($conn, $gid){
 }
 
 // $conn = mysqli_connect("localhost", "root", "", "bookstore");
-include "conn.php";
-$conn= mysqli_connect($HOST,$USERNAME,$PASSWORD,$DATABASE);
+$conn = mysqli_connect($HOST,$USERNAME,$PASSWORD,$DATABASE);
 if(!$conn){
     echo "Can't connect database " . mysqli_connect_error($conn);
     exit;

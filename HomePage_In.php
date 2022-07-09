@@ -176,6 +176,7 @@ else
         <br>
         <!-- checkbox for genres -->
         <?php 
+          require "conn.php";
           //  -------------------------- Database Usage -----------------------------
           // $conn= mysqli_connect("localhost","root","","BookStore");
 
@@ -184,9 +185,8 @@ else
           // $USERNAME="7ky85vsj9r7e";
           // $PASSWORD="pscale_pw_MjVZvRR2vGs9XwZNXzvhwoUOgvKEJpB-4hDrwxcauW8";
           // $DATABASE="peek-a-book";
-          // $conn= mysqli_connect($HOST,$USERNAME,$PASSWORD,$DATABASE);
-          include "conn.php";
           $conn= mysqli_connect($HOST,$USERNAME,$PASSWORD,$DATABASE);
+          
           
           if ($conn->connect_error) 
           {
@@ -223,8 +223,7 @@ else
       $check = 0;
       $type=['null'];
       // $conn = mysqli_connect("localhost", "root", "", "bookstore");
-      include "conn.php";
-	    $conn= mysqli_connect($HOST,$USERNAME,$PASSWORD,$DATABASE);
+      $conn = mysqli_connect($HOST,$USERNAME,$PASSWORD,$DATABASE);
       if(!$conn)
       {
         echo "Can't connect database " . mysqli_connect_error($conn);
@@ -677,7 +676,7 @@ else
         $(this).toggleClass("fa-heart fa-heart-o");
     });
   </script>
-	<?php require 'footer.php'; ?>
+	<?php require 'Footer.php'; ?>
 <!-- Optional JavaScript , dont put anything after this section-->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

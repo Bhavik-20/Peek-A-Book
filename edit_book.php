@@ -1,4 +1,5 @@
 <?php	
+	require "conn.php";
 	// if save change happen
 	if(!isset($_POST['save_change'])){
 		echo "Something wrong!";
@@ -22,9 +23,7 @@
 	}
 
 	// $conn = mysqli_connect("localhost", "root", "", "bookstore");
-	include "conn.php";
-	$conn= mysqli_connect($HOST,$USERNAME,$PASSWORD,$DATABASE);
-
+	$conn = mysqli_connect($HOST,$USERNAME,$PASSWORD,$DATABASE);
 		if(!$conn){
 			echo "Can't connect database " . mysqli_connect_error($conn);
 			exit;

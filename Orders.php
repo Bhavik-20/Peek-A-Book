@@ -46,37 +46,38 @@
 	<h2 class="headings" style="padding-top: 20px;"><center>Order History</center> </h2>
    	
    		<div style="margin: 30px; padding:20px; border: 2px solid lightgrey; border-radius: 10px;">
-   			<?php $type= array();
-	$items = array();
-	// $conn = mysqli_connect("localhost", "root", "", "bookstore");
-	include "conn.php";
-	$conn= mysqli_connect($HOST,$USERNAME,$PASSWORD,$DATABASE);
-	  if (!$conn) 
-	  {
-	    die("Connection failed: " . mysqli_connect_error());
-	  }
-	 $id=$_SESSION['user_id'];
-	 $query = "SELECT * FROM orders WHERE userid = $id";
-	 $result = mysqli_query($conn, $query);
+   			<?php 
+			require "conn.php";
+			$type= array();
+			$items = array();
+			// $conn = mysqli_connect("localhost", "root", "", "bookstore");
+			$conn = mysqli_connect($HOST,$USERNAME,$PASSWORD,$DATABASE);
+			if (!$conn) 
+			{
+				die("Connection failed: " . mysqli_connect_error());
+			}
+			$id=$_SESSION['user_id'];
+			$query = "SELECT * FROM orders WHERE userid = $id";
+			$result = mysqli_query($conn, $query);
 
-	 if(mysqli_num_rows($result)==0)
-	 {
-	 	echo "<h1></h1><br><br>
-		<center><br><br><br>
-		<h1  class='headings'> You have no Previous Orders, go ahead and place your very first order! </h1>
-		<br><br><br><br><br><br></center>";
-	 }
-	 else
-	 {
-	 for($i = 0; $i < mysqli_num_rows($result); $i++)
-      {
-        while($row_types = mysqli_fetch_assoc($result))
-        {
-          array_push($type,$row_types['orderid']);
-          echo "<h3 class='headings'>Order ID ".$row_types['orderid']."</h3>";
-          echo "<h6>Date of Purchase: ".$row_types['date']."</h6>";
-          $items = unserialize($row_types['cart']);
-          ?> 
+			if(mysqli_num_rows($result)==0)
+			{
+				echo "<h1></h1><br><br>
+				<center><br><br><br>
+				<h1  class='headings'> You have no Previous Orders, go ahead and place your very first order! </h1>
+				<br><br><br><br><br><br></center>";
+			}
+			else
+			{
+			for($i = 0; $i < mysqli_num_rows($result); $i++)
+			{
+				while($row_types = mysqli_fetch_assoc($result))
+				{
+				array_push($type,$row_types['orderid']);
+				echo "<h3 class='headings'>Order ID ".$row_types['orderid']."</h3>";
+				echo "<h6>Date of Purchase: ".$row_types['date']."</h6>";
+				$items = unserialize($row_types['cart']);
+				?> 
           <div style="width:60%; border:1px solid lightgrey">
           <table class="table">
           	<tr>
@@ -119,6 +120,6 @@
 <footer>
 
 <?php 
-	require_once "footer.php"; ?>
+	require_once "Footer.php"; ?>
 </footer>
 </html>

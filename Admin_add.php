@@ -7,12 +7,9 @@
 	  // setcookie($cookie_name, $cookie_value, time()+60,"/");
 	  // setcookie("visiting_user","",time()-3600,"/"); 
 	}
-	// $HOST="g1ulxzso4stk.us-east-1.psdb.cloud";
-	// $USERNAME="7ky85vsj9r7e";
-	// $PASSWORD="pscale_pw_MjVZvRR2vGs9XwZNXzvhwoUOgvKEJpB-4hDrwxcauW8";
-	// $DATABASE="peek-a-book";
-	include "conn.php";
-	$conn= mysqli_connect($HOST,$USERNAME,$PASSWORD,$DATABASE);
+	require "conn.php";
+	// $conn = mysqli_connect("localhost", "root", "", "bookstore");
+	$conn = mysqli_connect($HOST,$USERNAME,$PASSWORD,$DATABASE);
 	if(!$conn)
 	{
 		echo "Can't connect database " . mysqli_connect_error($conn);

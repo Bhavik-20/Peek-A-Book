@@ -57,9 +57,11 @@ include "Cart_functions.php";
 	    	<th>Total</th>
 	    </tr>
 	    	<?php
+				require "conn.php";
 			    foreach($_SESSION['cart'] as $isbn => $qty)
 			    {
-					$conn =  mysqli_connect("localhost", "root", "", "bookstore");
+					// $conn =  mysqli_connect("localhost", "root", "", "bookstore");
+					$conn = mysqli_connect($HOST,$USERNAME,$PASSWORD,$DATABASE);
 				    if(!$conn)
 				    {
 				      echo "Can't connect database " . mysqli_connect_error($conn);
@@ -98,7 +100,8 @@ include "Cart_functions.php";
 	 <hr>
 	 <h5>The order will be delivered to:</h5> 
 	 <?php
-	 $conn =  mysqli_connect("localhost", "root", "", "bookstore");
+	//  $conn =  mysqli_connect("localhost", "root", "", "bookstore");
+	$conn = mysqli_connect($HOST,$USERNAME,$PASSWORD,$DATABASE);
     if(!$conn)
     {
       echo "Can't connect database " . mysqli_connect_error($conn);
@@ -147,7 +150,7 @@ include "Cart_functions.php";
 
 <footer>
 <?php 
-	require_once "footer.php"; 
+	require_once "Footer.php"; 
 ?>
 
 </footer>

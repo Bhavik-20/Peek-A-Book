@@ -48,6 +48,7 @@ session_start();
    <br>
    <!-- ------------ PHP code for user info storing ----------------- -->
    <?php 
+      require 'conn.php';
       $gender=$age="";
       $p=$phone="";
       $g=$a=$ph=$check_fn=$check_ln=$l3=$l4=$l5=0;
@@ -190,13 +191,12 @@ session_start();
              
 	          
 	            // -----------------------------------
-	          $servername = "localhost";
-	          $username = "root";
-	          $password = "";
-	          $dbname = "BookStore";
+	          // $servername = "localhost";
+	          // $username = "root";
+	          // $password = "";
+	          // $dbname = "BookStore";
 	          // $conn = mysqli_connect($servername, $username, $password, $dbname);
-            include "conn.php";
-	          $conn= mysqli_connect($HOST,$USERNAME,$PASSWORD,$DATABASE);
+            $conn = mysqli_connect($HOST,$USERNAME,$PASSWORD,$DATABASE);
 
 	          if (!$conn) 
 	          {
@@ -245,8 +245,7 @@ session_start();
            if(isset($_SESSION['user_id']))
            { 
               // $con= mysqli_connect("localhost","root","","BookStore");
-              include "conn.php";
-	            $con= mysqli_connect($HOST,$USERNAME,$PASSWORD,$DATABASE);
+              $con = mysqli_connect($HOST,$USERNAME,$PASSWORD,$DATABASE);
               if ($con->connect_error) 
               {
                 die("<br>Connection failed: " . $con->connect_error);
@@ -312,9 +311,8 @@ session_start();
             }
             else
             { 
-              include "conn.php";
-              $con= mysqli_connect($HOST,$USERNAME,$PASSWORD,$DATABASE);
               // $con= mysqli_connect("localhost","root","","BookStore");
+              $con = mysqli_connect($HOST,$USERNAME,$PASSWORD,$DATABASE);
               if ($con->connect_error) 
               {
                 die("<br>Connection failed: " . $con->connect_error);
@@ -347,8 +345,7 @@ session_start();
           if(isset($_POST['Delete']))
           {
             // $con= mysqli_connect("localhost","root","","BookStore");
-            include "conn.php";
-	          $con= mysqli_connect($HOST,$USERNAME,$PASSWORD,$DATABASE);
+            $con = mysqli_connect($HOST,$USERNAME,$PASSWORD,$DATABASE);
             if ($con->connect_error) 
             {
               die("<br>Connection failed: " . $con->connect_error);
@@ -383,8 +380,7 @@ session_start();
         <!-- ------------------------ PHP code Retrieving User name from db ------------------ -->
         <?php 
 			// $con= mysqli_connect("localhost","root","","BookStore");
-      include "conn.php";
-      $con= mysqli_connect($HOST,$USERNAME,$PASSWORD,$DATABASE);
+      $con = mysqli_connect($HOST,$USERNAME,$PASSWORD,$DATABASE);
 			if ($con->connect_error) 
 			{
 				die("<br>Connection failed: " . $con->connect_error);

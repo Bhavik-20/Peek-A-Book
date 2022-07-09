@@ -78,17 +78,14 @@ session_start();
             padding: 5% 10%;
         }
 
-        .content .fa {
-        height: 30px;
-        width: 30px;
-        padding: 10px;
-        font-size: 20px;
-        text-align: center;
-        text-decoration: none;
-        margin: 5px;
-        border-radius: 50%;
-        color: white;
-        box-shadow: 1px 1px 1px 1px whitesmoke ;
+        .content .linkedin .fa {
+            padding: 10px;
+            font-size: 20px;
+            width: 20px;
+            text-align: center;
+            text-decoration: none;
+            margin: 5px 2px;
+            border-radius: 50%;
         }
         .fa-linkedin {
             background: #007bb5;
@@ -160,7 +157,7 @@ session_start();
             <div class="content" style="text-align: center;padding-top:0px; padding-bottom: 5px;"> 
                 <h5 style="padding-top: 20px;"> Bhavik Bhatt </h5>
                 <p> 
-                    <a class="link-text" href="https://www.linkedin.com/in/bhavikhbhatt/"><i class="fa fa-linkedin"></i> bhavikbhatt </a>
+                    <a class="link-text" href="https://www.linkedin.com/in/bhavikhbhatt/"><i class="linkedin fa fa-linkedin"></i> bhavikbhatt </a>
                     <br>
                     <a class="link-text" href="https://github.com/Bhavik-20"><i class="fa fa-github"> </i> Bhavik-20 </a>
                 </p>
@@ -171,9 +168,9 @@ session_start();
             <div class="content" style="text-align: center;padding-top:0px; padding-bottom: 5px;"> 
                 <h5 style="padding-top: 20px;"> Muskaan Nandu </h5>
                 <p> 
-                    <a class="link-text" href="https://www.linkedin.com/in/muskaan-nandu/"> <i class="fa fa-linkedin"></i> Muskaan Nandu </a>
+                    <a class="link-text" href="https://www.linkedin.com/in/muskaan-nandu/">Muskaan Nandu </a>
                     <br>
-                    <a class="link-text" href="https://github.com/Muskaan-Nandu"><i class="fa fa-github"></i> Muskaan-Nandu </a>
+                    <a class="link-text" href="https://github.com/Muskaan-Nandu"><i class="fa fa-github" style="font-size:36px">></i> Muskaan-Nandu </a>
                 </p> 
            </div>
         </div>

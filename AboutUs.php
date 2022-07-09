@@ -79,10 +79,7 @@ session_start();
         }
 
         .content .linkedin .fa {
-            height: 50px;
-            width: 50px;
-            padding:15px;
-            font-size: 20px;
+            font-size: 24px;
             text-align: center;
             text-decoration: none;
             margin: 5px;

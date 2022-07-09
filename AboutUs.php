@@ -78,10 +78,10 @@ session_start();
             padding: 5% 10%;
         }
 
-        .fa {
-        height: 25px;
-        width: 25px;
-        /* padding: 2px; */
+        .content .fa {
+        height: 30px;
+        width: 30px;
+        padding: 15px;
         font-size: 20px;
         text-align: center;
         text-decoration: none;

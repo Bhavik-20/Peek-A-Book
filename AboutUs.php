@@ -146,8 +146,8 @@ session_start();
             <div class="content" style="text-align: center;padding-top:0px; padding-bottom: 5px;"> 
                 <h5 style="padding-top: 20px;"> Bhavik Bhatt </h5>
                 <h6> 
-                    <a href="https://www.linkedin.com/in/bhavikhbhatt/" class="fa fa-linkedin"> bhavikbhatt </a>
-                    <a href="https://github.com/Bhavik-20" class="fa fa-github"> Bhavik-20 </a>
+                    <a style="text-decoration: none;" href="https://www.linkedin.com/in/bhavikhbhatt/"><i class="fa fa-linkedin"></i> bhavikbhatt </a>
+                    <a style="text-decoration: none;" href="https://github.com/Bhavik-20"><i class="fa fa-github"> </i> Bhavik-20 </a>
                 </h6>
                 <p> Age: 22</p>
            </div>
@@ -157,8 +157,8 @@ session_start();
             <div class="content" style="text-align: center;padding-top:0px; padding-bottom: 5px;"> 
                 <h5 style="padding-top: 20px;"> Muskaan Nandu </h5>
                 <h6> 
-                    <a href="https://www.linkedin.com/in/muskaan-nandu/" class="fa fa-linkedin"> Muskaan Nandu </a>
-                    <a href="https://github.com/Muskaan-Nandu" class="fa fa-github"> Muskaan-Nandu </a>
+                    <a style="text-decoration: none;" href="https://www.linkedin.com/in/muskaan-nandu/"> <i class="fa fa-linkedin"></i> Muskaan Nandu </a>
+                    <a style="text-decoration: none;" href="https://github.com/Muskaan-Nandu"><i class="fa fa-github"></i> Muskaan-Nandu </a>
                 </h6> 
                 <p> Age: 22</p>
            </div>

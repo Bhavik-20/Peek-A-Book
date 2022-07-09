@@ -79,8 +79,8 @@ session_start();
         }
 
         .fa {
-        height: 20px;
-        width: 20px;
+        height: 25px;
+        width: 25px;
         padding: 5px;
         font-size: 20px;
         text-align: center;
@@ -101,7 +101,6 @@ session_start();
         .link-text{
             text-decoration: none;
             color: black;
-            font-size: 20px;
         }
    
     </style>

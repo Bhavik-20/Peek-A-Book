@@ -159,7 +159,7 @@ session_start();
                 <p> 
                     <a class="link-text" href="https://www.linkedin.com/in/bhavikhbhatt/"><i class="linkedin fa fa-linkedin"></i> bhavikbhatt </a>
                     <br>
-                    <a class="link-text" href="https://github.com/Bhavik-20"><i class="fa fa-github"> </i> Bhavik-20 </a>
+                    <a class="link-text" href="https://github.com/Bhavik-20"><i class="fa fa-github" style="font-size:24px"> </i> Bhavik-20 </a>
                 </p>
            </div>
         </div>
@@ -168,9 +168,9 @@ session_start();
             <div class="content" style="text-align: center;padding-top:0px; padding-bottom: 5px;"> 
                 <h5 style="padding-top: 20px;"> Muskaan Nandu </h5>
                 <p> 
-                    <a class="link-text" href="https://www.linkedin.com/in/muskaan-nandu/">Muskaan Nandu </a>
+                    <a class="link-text" href="https://www.linkedin.com/in/muskaan-nandu/"><i class="linkedin fa fa-linkedin"></i> Muskaan Nandu </a>
                     <br>
-                    <a class="link-text" href="https://github.com/Muskaan-Nandu"><i class="fa fa-github" style="font-size:36px">></i> Muskaan-Nandu </a>
+                    <a class="link-text" href="https://github.com/Muskaan-Nandu"><i class="fa fa-github" style="font-size:24px"></i> Muskaan-Nandu </a>
                 </p> 
            </div>
         </div>

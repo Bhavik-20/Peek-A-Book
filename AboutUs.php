@@ -81,7 +81,7 @@ session_start();
         .fa {
         height: 25px;
         width: 25px;
-        padding: 5px;
+        padding: 2px;
         font-size: 20px;
         text-align: center;
         text-decoration: none;
@@ -172,11 +172,10 @@ session_start();
             <center><img src="images/muskaan.JPG" height=200px; width=200px; style="border-radius: 50% ;border: 7px solid #CCD1D1;"/></center>
             <div class="content" style="text-align: center;padding-top:0px; padding-bottom: 5px;"> 
                 <h5 style="padding-top: 20px;"> Muskaan Nandu </h5>
-                <h6> 
+                <p> 
                     <a class="link-text" href="https://www.linkedin.com/in/muskaan-nandu/"> <i class="fa fa-linkedin"></i> Muskaan Nandu </a>
                     <a class="link-text" href="https://github.com/Muskaan-Nandu"><i class="fa fa-github"></i> Muskaan-Nandu </a>
-                </h6> 
-                <p> Age: 22</p>
+                </p> 
            </div>
         </div>
         <div style="padding-top:60px; margin-left:40px; width: 30%">

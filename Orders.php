@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Book Store Cart Page</title>
+	<title>Peek-A-Book | Orders</title>
 	<style>
 		@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,600&display=swap');
 		@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');

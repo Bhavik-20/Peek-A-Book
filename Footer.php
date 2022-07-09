@@ -65,7 +65,7 @@
 <footer class="footer-bs" > <!--style="background-color:#99d3df "-->
       <div class="row">
         <div class="col-md-6 footer-brand animated fadeInLeft">
-            <h2>Book Store</h2>
+            <h2>Peek-A-Book</h2>
         <p> Experience Online Book Purchase Like Nowhere else</p>
               <p>© 2020, All rights reserved</p>
           </div>

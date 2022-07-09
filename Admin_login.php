@@ -9,7 +9,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Book Store Admin Sign In Page</title>
+	<title>Peek-A-Book | Admin Login</title>
 	<link rel="stylesheet" type="text/css" href="Authenticate_StyleSheet.css">
     <style>
     .error {

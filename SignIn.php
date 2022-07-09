@@ -11,7 +11,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Sign In</title>
+	<title>Peek-A-Book | Sign In</title>
 	<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 	<link rel="stylesheet" type="text/css" href="login.css">
 	<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
@@ -222,7 +222,7 @@
 		<div class="login-main">
 		  	<div class="row" style="margin-left:0px;">
 			<img src="images/book1.jpg" alt="BooksImage" style="width:70px;height:110px; padding-top:20px; margin-right:20px;">
-			<h1>Welcome<br>To Book Store</h1>
+			<h1>Welcome<br>To Peek-A-Book</h1>
 			<h2>Sign In to buy your favourite books !</h2>
 		</div>
       </div>

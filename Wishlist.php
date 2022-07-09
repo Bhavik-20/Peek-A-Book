@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Book Store Wishlist</title>
+	<title>Peek-A-Book | Wishlist</title>
 	<style>
 
 		@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,600&display=swap');

@@ -24,7 +24,7 @@
   <!--Navigation Bar-->
 
   <nav class="navbar sticky-top navbar-expand navbar-dark bg-dark" >
-    <a class="navbar-brand" href="HomePage_All.php"><h1>Book Store</h1></a>
+    <a class="navbar-brand" href="HomePage_All.php"><h1>Peek-A-Book</h1></a>
       
       <ul class="navbar-nav mr-auto mt-2 mt-lg-0" >  
         <li class="nav-item active">

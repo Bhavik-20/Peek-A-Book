@@ -24,7 +24,7 @@
   <!--Navigation Bar-->
 
   <nav class="navbar sticky-top navbar-expand navbar-dark bg-dark" >
-    <a class="navbar-brand" href="HomePage_In.php"><h1>Book Store</h1></a>
+    <a class="navbar-brand" href="HomePage_In.php"><h1>Peek-A-Book</h1></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>

@@ -81,7 +81,7 @@ session_start();
         .fa {
         height: 25px;
         width: 25px;
-        padding: 2px;
+        /* padding: 2px; */
         font-size: 20px;
         text-align: center;
         text-decoration: none;
@@ -164,6 +164,7 @@ session_start();
                 <h5 style="padding-top: 20px;"> Bhavik Bhatt </h5>
                 <p> 
                     <a class="link-text" href="https://www.linkedin.com/in/bhavikhbhatt/"><i class="fa fa-linkedin"></i> bhavikbhatt </a>
+                    <br>
                     <a class="link-text" href="https://github.com/Bhavik-20"><i class="fa fa-github"> </i> Bhavik-20 </a>
                 </p>
            </div>
@@ -174,6 +175,7 @@ session_start();
                 <h5 style="padding-top: 20px;"> Muskaan Nandu </h5>
                 <p> 
                     <a class="link-text" href="https://www.linkedin.com/in/muskaan-nandu/"> <i class="fa fa-linkedin"></i> Muskaan Nandu </a>
+                    <br>
                     <a class="link-text" href="https://github.com/Muskaan-Nandu"><i class="fa fa-github"></i> Muskaan-Nandu </a>
                 </p> 
            </div>

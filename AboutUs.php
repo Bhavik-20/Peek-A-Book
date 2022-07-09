@@ -139,15 +139,15 @@ session_start();
             <div class="content" style="text-align: center;padding-top:0px; padding-bottom: 5px;"> 
                 <h5 style="padding-top: 20px;"> Bhavik Bhatt </h5>
                 <h6> 1814007 </h6>
-                <p> Age: 20</p>
+                <p> Age: 22</p>
            </div>
         </div>
         <div style="width:30%;">
             <center><img src="images/muskaan.JPG" height=200px; width=200px; style="border-radius: 50% ;border: 7px solid #CCD1D1;"/></center>
             <div class="content" style="text-align: center;padding-top:0px; padding-bottom: 5px;"> 
                 <h5 style="padding-top: 20px;"> Muskaan Nandu </h5>
-                <h6> 1814020 </h6>
-                <p> Age: 20</p>
+                <h6> <a href="https://www.linkedin.com/" class="fa fa-linkedin"> Muskaan Nandu </a></h6>
+                <p> Age: 22</p>
            </div>
         </div>
         <div style="padding-top:60px; margin-left:40px; width: 30%">

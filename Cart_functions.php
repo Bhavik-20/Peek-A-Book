@@ -1,5 +1,4 @@
 <?php
-	require "conn.php";
 	function getbookprice($isbn){
 		require "conn.php";
 		$conn = mysqli_connect($HOST,$USERNAME,$PASSWORD,$DATABASE);

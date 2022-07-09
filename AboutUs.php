@@ -78,14 +78,16 @@ session_start();
             padding: 5% 10%;
         }
 
-        .content .linkedin .fa {
-            padding: 10px;
+        .linkedin .fa {
+            height: 50px;
+            width: 50px;
+            padding:15px;
             font-size: 20px;
-            width: 20px;
             text-align: center;
             text-decoration: none;
-            margin: 5px 2px;
+            margin: 5px;
             border-radius: 50%;
+            color: white;
         }
         .fa-linkedin {
             background: #007bb5;
@@ -95,6 +97,10 @@ session_start();
         .link-text{
             text-decoration: none;
             color: black;
+        }
+
+        .link-text:hover{
+            text-decoration: none;
         }
    
     </style>

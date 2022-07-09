@@ -78,7 +78,7 @@ session_start();
             padding: 5% 10%;
         }
 
-        .fa {
+        .content .linkedin .fa {
             height: 50px;
             width: 50px;
             padding:15px;
@@ -174,7 +174,7 @@ session_start();
             <div class="content" style="text-align: center;padding-top:0px; padding-bottom: 5px;"> 
                 <h5 style="padding-top: 20px;"> Muskaan Nandu </h5>
                 <p> 
-                    <a class="link-text" href="https://www.linkedin.com/in/muskaan-nandu/"><i class="fa fa-linkedin"></i> Muskaan Nandu </a>
+                    <a class="link-text" href="https://www.linkedin.com/in/muskaan-nandu/"><i class="linkedin fa fa-linkedin"></i> Muskaan Nandu </a>
                     <br>
                     <a class="link-text" href="https://github.com/Muskaan-Nandu"><i class="fa fa-github" style="font-size:24px"></i> Muskaan-Nandu </a>
                 </p> 

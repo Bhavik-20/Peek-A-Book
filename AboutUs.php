@@ -81,7 +81,7 @@ session_start();
         .content .fa {
         height: 30px;
         width: 30px;
-        padding: 15px;
+        padding: 10px;
         font-size: 20px;
         text-align: center;
         text-decoration: none;
@@ -94,10 +94,7 @@ session_start();
             background: #007bb5;
             color: white;
         }
-        .fa-github{
-            background: black;
-            color: white;
-        }
+        
         .link-text{
             text-decoration: none;
             color: black;

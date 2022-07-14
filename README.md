@@ -15,9 +15,5 @@ Peek-A-Book is an online e-commerce based bookstore which allows users to pick t
 * When a book is bought the count of total book is reduced. If no more copies are left, the user is notified that the book is out of stock on the home page.
 * Incase only a few copies of a book are available the user is notified on the homepage.
 * An admin login is provided for the admin to manage the inventory and check the orders. The admin dashboard can be accessed using the following credentials.
-
 * | Admin Name | Admin Password |
   |------------|----------------|
-  | Admin      | password       |
-
-

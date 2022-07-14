@@ -21,7 +21,7 @@ function create_image()
 	imagefill($image,0,0,$black);
 	//$font= 'C:\xampp\htdocs\WP2\BookStore\Roboto-Regular.ttf';
 	// $font= 'C:\xampp\htdocs\BookStore-Peek-a-book\Roboto-Regular.ttf';
-	$font= '\Roboto-Regular.ttf';
+	$font= 'Roboto-Regular.ttf';
 	//$font = mb_convert_encoding($font, 'big5', 'utf-8');
 	//carving txt to img
 	//echo "$captcha";

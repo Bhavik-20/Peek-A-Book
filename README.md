@@ -17,3 +17,4 @@ Peek-A-Book is an online e-commerce based bookstore which allows users to pick t
 * An admin login is provided for the admin to manage the inventory and check the orders. The admin dashboard can be accessed using the following credentials.
 * | Admin Name | Admin Password |
   |------------|----------------|
+  | admin@1    | Aa@12345       |

@@ -141,7 +141,7 @@ password hashing in phpmyadmin: UPDATE `admins` SET `password`=sha1(password) WH
 
   <form  method="POST"  action= "<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
     <center>
-      <img src="Images/book1.jpg" alt="BooksImage" style="width:50px;height:60px;">
+      <img src="images/book1.jpg" alt="BooksImage" style="width:50px;height:60px;">
     	<div class="top">
       	<h1>Admin Sign In</h1>
       </div>

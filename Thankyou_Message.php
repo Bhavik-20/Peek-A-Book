@@ -45,6 +45,8 @@
 	require 'conn.php';
 	function getOrderId($conn, $customerid){
 		// $conn = mysqli_connect("localhost", "root", "", "bookstore");
+		require 'conn.php';
+
 		$conn = mysqli_connect($HOST,$USERNAME,$PASSWORD,$DATABASE);
 		$query = "SELECT orderid FROM orders WHERE userid = '$customerid' and date = date('Y-m-d H:i'); ";
 		$result = mysqli_query($conn, $query);
@@ -57,6 +59,8 @@
 	}
 	function getbookprice($isbn){
 		// $conn = mysqli_connect("localhost", "root", "", "bookstore");
+		require 'conn.php';
+
 		$conn = mysqli_connect($HOST,$USERNAME,$PASSWORD,$DATABASE);
 		$query = "SELECT book_price FROM books WHERE book_isbn = '$isbn'";
 		$result = mysqli_query($conn, $query);
@@ -69,6 +73,8 @@
 	}
 
 	function getBookByIsbn($conn, $isbn){
+		require 'conn.php';
+
 		$query = "SELECT book_title, book_author, book_price , book_image, book_qty FROM books WHERE book_isbn = '$isbn'";
 		$result = mysqli_query($conn, $query);
 		if(!$result){
@@ -81,6 +87,8 @@
 	//update items left
 	foreach($_SESSION['cart'] as $isbn => $qty)
 	   {
+		require 'conn.php';
+
 	   	// $conn = mysqli_connect("localhost", "root", "", "bookstore");
 		   $conn = mysqli_connect($HOST,$USERNAME,$PASSWORD,$DATABASE);
 		if (!$conn) 
@@ -100,6 +108,7 @@
 			
 	if(isset($_SESSION['empty_cart']))
 	{
+		require 'conn.php';
 
 		// $conn = mysqli_connect("localhost", "root", "", "bookstore");
 		$conn = mysqli_connect($HOST,$USERNAME,$PASSWORD,$DATABASE);

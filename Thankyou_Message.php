@@ -121,7 +121,7 @@
 		$date = date("Y-m-d H:i");
 		$cart= serialize($_SESSION['cart']);
 		$query=$query = "INSERT INTO orders VALUES 
-		('', '" . $id . "', '" . $_SESSION['total_price'] . "', '" . $date . "', '" . $cart . "')";
+		(0, '" . $id . "', '" . $_SESSION['total_price'] . "', '" . $date . "', '" . $cart . "')";
 		$result = mysqli_query($conn, $query);
 		if(!$result){
 			echo "Insert orders failed " . mysqli_error($conn);

@@ -29,28 +29,28 @@ Peek-A-Book is an online e-commerce based bookstore which allows users to pick t
 * HTML, CSS, JS, AJAX, Jquery: Frontend
 
 # Getting Started
-Step 1: Install XAMPP using the link provided above.
+** Step 1: Install XAMPP using the link provided above. **
 * Alternatively follow this [video](https://www.youtube.com/watch?v=O6T8YPUmyj8)
 
-Step 2: Clone the repository in the htdocs folder. 
+** Step 2: Clone the repository in the htdocs folder. **
 * For eg if your XAMPP has been installed in C:\Program Files\xampp then navigate to the htdocs folder present in the above path and run the following command:
 
 ```
 $ git clone https://github.com/Bhavik-20/Peek-A-Book.git
 ```
 
-Step 3: Enable XAMPP enviroment
+** Step 3: Enable XAMPP enviroment **
 * Run the Apache and MySql Module in XAMPP as shown below
 <img src ="readme-contents/st3-Xampp.png" width = "500" height = "300">
 <!-- ![](readme-contents/st3-Xampp.png) -->
 
-Step 4: Import Database
+** Step 4: Import Database**
 * Open PhpMyAdmin from the Xampp Control Panel
 * Make a new database named "peek-a-book"
 * Go to the "Import" tab in the newly created database
 * Upload the "bookstore.sql" file 
 
-Step 5: Run Application
+** Step 5: Run Application **
 * Open any browser and enter the following URL:
 ```
 $ localhost/Peek-A-Book/index.php

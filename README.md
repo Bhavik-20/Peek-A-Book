@@ -32,9 +32,10 @@ Peek-A-Book is an online e-commerce based bookstore which allows users to pick t
 Step 1: Install XAMPP using the link provided above or alternatively follow this [video](https://www.youtube.com/watch?v=O6T8YPUmyj8)
 
 Step 2: Clone the repository in the htdocs folder. For eg if your XAMPP has been installed in C:\Program Files\xampp then navigate to the htdocs folder present in the above path and run the following command:
-''' 
+
+```
 git clone https://github.com/Bhavik-20/Peek-A-Book.git
-'''
+```
 
 Step 3: Enable XAMPP enviroment
 Run the Apache and MySql Module in XAMPP as shown below

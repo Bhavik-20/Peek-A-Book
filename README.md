@@ -29,6 +29,9 @@ Peek-A-Book is an online e-commerce based bookstore which allows users to pick t
 * HTML, CSS, JS, AJAX, Jquery: Frontend
 
 # Getting Started
+
+**----------You can skip the installation of this project and directly access it [here](https://visualization-of-algos.herokuapp.com/)----------**
+
 **Step 1: Install XAMPP using the link provided above.**
 * Alternatively follow this [video](https://www.youtube.com/watch?v=O6T8YPUmyj8)
 

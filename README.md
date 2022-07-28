@@ -44,8 +44,14 @@ Step 3: Enable XAMPP enviroment
 <!-- <img src ="readme-contents"> -->
 ![](readme-contents/st3-Xampp.png)
 
-Step 4: Run Application
-Open any browser and enter the following URL:
+Step 4: Import Database
+* Open PhpMyAdmin from the Xampp Control Panel
+* Make a new database named "peek-a-book"
+* Go to the "Import" tab in the newly created database
+* Upload the "bookstore.sql" file 
+
+Step 5: Run Application
+* Open any browser and enter the following URL:
 ```
 $ localhost/Peek-A-Book/index.php
 ```

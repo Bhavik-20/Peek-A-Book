@@ -41,8 +41,8 @@ $ git clone https://github.com/Bhavik-20/Peek-A-Book.git
 
 Step 3: Enable XAMPP enviroment
 * Run the Apache and MySql Module in XAMPP as shown below
-<!-- <img src ="readme-contents"> -->
-![](readme-contents/st3-Xampp.png)
+<img src ="readme-contents/st3-Xampp.png" width = "100" height = "100">
+<!-- ![](readme-contents/st3-Xampp.png) -->
 
 Step 4: Import Database
 * Open PhpMyAdmin from the Xampp Control Panel

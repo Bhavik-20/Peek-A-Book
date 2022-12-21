@@ -44,7 +44,9 @@
         <span class="input-group-text cyan lighten-2" id="basic-text1" style="height: 25px;"><i class="fa fa-search text-black" aria-hidden="true"></i></span>
       </div>
       <!-- <input class="form-control my-0 py-1" type="text" placeholder="Search" aria-label="Search" > -->
-      <?php include "SearchTry.php" ?>
+      <?php 
+      // include "SearchTry.php" 
+      ?>
       <br><br>
     <!-- Search form ends -->
       <ul class="navbar-nav"  style="float: right;margin-left:10px;">

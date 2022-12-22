@@ -45,7 +45,7 @@
       </div>
       <!-- <input class="form-control my-0 py-1" type="text" placeholder="Search" aria-label="Search" > -->
       <?php 
-      // include "SearchTry.php" 
+      include "SearchTry.php" 
       ?>
       <br><br>
     <!-- Search form ends -->
